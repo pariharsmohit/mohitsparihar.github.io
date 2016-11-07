@@ -1,0 +1,63 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content{
+    margin: 0 auto;
+    width: 800px;
+}
+.first{
+    float: right;
+}
+
+li{
+    list-style: none;
+}
+section h1 {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-top: .8em;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.seperator{
+    margin: 0 .5rem 0 .5rem;
+}
+
+.name{
+    font-size: 2rem;
+}
+
+section .label {
+    font-weight: bold;
+    width: 150px;
+    text-align: right;
+    padding-right: .5em;
+    display: inline-block;
+}
+
+section .content {
+    vertical-align: top;
+    width: 600px;
+    display: inline-block;
+}
+
+section section{
+    margin-bottom: 2rem;
+}
+
+section ul {
+    width: 800px;
+    overflow: hidden; }
+section .double li {
+    float: left;
+    width: 30%; }
+
+#contact{
+    font-size: 13px;
+}
+
+#contact a{
+    text-decoration: none;
+}
