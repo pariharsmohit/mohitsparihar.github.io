@@ -41,13 +41,13 @@
 				</section>
 			</section>
 			
-			<section id="objective">
+			<section id="overview" ng-hide="true">
 				<h1>Objective</h1>
-				<p data-content="objective">{{resume.objective}}</p>
+				<p data-content="overview">{{resume.objective}}</p>
 			</section>
 
 			<section id="aboutme">
-				<h1>Executive Summary</h1>
+				<h1>Overview</h1>
 				<p data-content="aboutme">{{resume.aboutme}}</p>
 			</section>
 
@@ -93,7 +93,7 @@
 				</ul>
 			</section>
 
-			<section id="experience">
+			<section id="experience" ng-hide="true">
 				<h1>Experience</h1>
 				<ul data-content="experience">
 					<li ng-repeat="item in resume.experience">
