@@ -45,7 +45,7 @@
 		"Thermodynamics",
 		"Engineering Mechanics"
 	],
-	//"projects" : [
+	"projects" : [
         {
             "name":"Dealer Group Location",
             "technologies":"Javascript, HTML5, GoogleMapAPI",
