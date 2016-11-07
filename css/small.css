@@ -1,0 +1,34 @@
+@media only screen and (max-device-width: 480px) {
+    #content{
+        margin: 0 auto;
+        width: 100%;
+        overflow-x:hidden;
+    }
+
+    section .double li{
+        float:none;
+        width: 100%;
+    }
+
+    section ul{
+        width: 100%;
+        padding: 0px;
+    }
+    section .content{
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    section .label{
+        text-align: left;
+    }
+    #contact{
+        font-size: .8rem;
+    }
+    #contact span{
+        display: block;
+    }
+    #contact span.seperator{
+        display: none;
+    }
+}
