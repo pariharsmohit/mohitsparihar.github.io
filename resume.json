@@ -45,7 +45,7 @@
 		"Thermodynamics",
 		"Engineering Mechanics"
 	],
-	/*"projects" : [
+	//"projects" : [
         {
             "name":"Dealer Group Location",
             "technologies":"Javascript, HTML5, GoogleMapAPI",
@@ -225,7 +225,7 @@
 			"location" : "The Online ColdFusion Meetup",
 			"link" : "http://www.meetup.com/coldfusionmeetup/events/15165569/" 
 		}
-	],*/
+	],
 	"education" : [
 		{
 			"school" : "Maharana Pratap College of Technology, Gwalior, India",
