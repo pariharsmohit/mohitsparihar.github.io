@@ -10,171 +10,35 @@
     "linkedin":"https://www.linkedin.com/in/bhupendraparihar",
 	"social" : [
 		{
-			"link" : "https://github.com/bhupendraparihar/",
+			"link" : "https://github.com/mohitsparihar/",
 			"name" : "GitHub"
 		},
+		
 		{
-			"link" : "http://blog.bittersweetryan.com",
-			"name" : "Blog"
-		},
-		{
-			"link" : "http://www.linkedin.com/pub/ryan-anklam/3/ba9/765",
+			"link" : "http://www.linkedin.com/in/mohit-singh-parihar-b6837512b",
 			"name" : "LinkedIn"
 		},
 		{
-			"link" : "http://www.twitter.com/bittersweetryan",
+			"link" : "http://www.twitter.com/pariharsmohit",
 			"name" : "Twitter"
 		},
 		{
-			"link" : "https://plus.google.com/u/0/102276762899040799950/posts",
+			"link" : "https://plus.google.com/116000295740154568748",
 			"name" : "Google+"
 		},
-		{
-			"link" : "https://github.com/bittersweetryan/jsonme",
-			"name" : "this.source"
-		}
+		
 	],
 	"skills" : [
-		"Matlab",
 		"CAD/CAM",
-        "ANSYS",
 		"HTML5",
-		"JavaScript"
+		
 	],
 	"subjects" : [
 		"Thermodynamics",
 		"Engineering Mechanics",
 		"Machine Design"
 	],
-	"projects" : [
-        {
-            "name":"Dealer Group Location",
-            "technologies":"Javascript, HTML5, GoogleMapAPI",
-            "url":"http://www.stevinsonauto.com/DealerLocations",
-            "description":"Showing the car dealers of a particular group on Google Map using googleMapAPI and help the buyer to locate the appropriate dealer based on his shared location.",
-            "role":"My role was to interact with the REST API and show the desired behavior."            
-        },
-		{
-			"name":"www.alexandermini.com",
-			"technologies":"LESS, CCS3, Javascript, JQuery",
-			"description":"Alexander Mini is one of the most famous car dealer website which requested for a full white plane theme to be created with in short span of time. Not only we created this theme for http://www.alexandermini.com/ but for all the mini dealers in US."
-		},
-		{
-			"name":"EDO(Enhance Design Options) for all the CDK websites",
-			"technologies":"Javascript, Jquery, LESS, HTML5",
-			"description": "This project is about adding many features like Stiky Navigation, New Navigations, Enlarged Header & Footer to be added to all the CDK websites. CDK owns more than 10000 websites around the world."
-		},
-		{
-			"name" : "www.sewell.com",
-			"technologies" : "Object Oriented Javascript, Jasmine, GoogleMapApi, Responsive Design",
-			"description" : "Project sewell is a website build for group of car dealers in United States. It is a responsive website supporting digital marketing of cars."
-		},
-		{
-			"name" : "Flex+ Solution : http://stevinsonauto.com on mobile",
-			"technologies" : "jQuery, Bootstrap, RequireJS, CSS3, LESS, HTML5, Jasmine",
-			"description" : "Flex+ is a solution for dealer websites which are not responsive. It is adaptive layout design for each page and rendering using wicket code. Url: http://www.stevinsonauto.com/?device=mobile "
-		},
-        {
-            "name" : "ACB (Appointment CallBack)",
-            "technologies" : "AngularJS, jQuery, HTML5, OOJS, Jasmine",
-            "description" : "ACB provide a call tracking and scheduling system for business process executives."
-        },
-		{
-			"name" : "Contact Management System",
-			"technologies" : "jQuery, Backbone.js, LESS, HTML5, Twitter Bootstrap, Jasmine",
-			"description" : "CMS generates scripts for the agent (say BPO) to communicate easily with the client. These scripts or web pages are able to collect data from the user and can be configured any time to change the flow of business."
-		},
-		{
-			"name" : "LRM (Loan Resolution Model)",
-			"technologies" : "jQuery, Javascript, HTML5, CSS3, Struts2",
-			"description" : "LRM is one the highest revenue-making product of Altisource for its client Ocwen(Home Mortgage company in US). As the name suggest it provides various options to the customer which are default or going to be default on their loan, i.e., imminent default. My responsibility is to provide a web app for doing so."
-		}
-	],
-	"experience" : [
-		{
-			"company" : "Ness Technolgoies",
-			"link" : "http://www.ness.com",
-			"title" : "Senior Software Engineer",
-			"startDate" : "March 2014",
-			"endDate" : "Present",
-			"responsibilities" : "At Ness technologies I worked for CDK Global which provide digital marketing website for car dealers all over the world, moslty for US. My responsibilities includes understanding the client requirement and create differnt widget that can be easily placed on any dealer website.",
-			"achievements" : "Introduced Dealer Locator widget using the googlemap api on various sites to easily navigate to nearest dealer."
-		},
-		{
-			"company" : "Altisource Business Solutions",
-			"link" : "http://www.altisource.com",
-			"title" : "Software Engineer",
-			"startDate" : "September 2013",
-			"endDate" : "Febrabuary 2014",
-			"responsibilities" : "Implement best practices to JavaScript codebase, develop new functionality and create new layouts, teach advanced Javacript techniques to the team",
-			"achievements" : "Introduced unit testing, continuous integration, source control, and development best practices to the team.  Started the Lunch and Learn program where team members teach each other new technologies and techniques."
-		},
-		{
-			"company" : "GCM Convent School",
-			"link" : "http://gcmnowgong.in",
-			"title" : "Physics & Computer Science Faculty",
-			"startDate" : "January 2013",
-			"endDate" : "August 2013",
-			"responsibilities" : "Teaching Pre-college physics and computer science to students",
-			"achievements" : "Taught various aspects of physics, took the initiative of smart learning pearson course in school."
-		},
-		{
-			"company" : "Altisource Business Solutions",
-			"link" : "http://www.altisource.com",
-			"title" : "Software Engineer",
-			"startDate" : "April 2010",
-			"endDate" : "December 2012",
-			"responsibilities" : "Develoment and Design of a system which facilitate call center executive to track and manage their calls.",
-			"achievements" : "Lead efforts to re-write procedural legacy application using an object-oriented approach. Act as scrum master to drive the team."
-		}
-	],
-	"training" : [
-		{
-			"company" : "MakeMyTrip",
-			"technology" : "Jquery, HTML5",
-			"location" : "Gurgaon",
-			"duration" : "9 June - 12 June",
-			"batchsize" : "17",
-			"workResponsibilities" : [
-				"Train Engineers in HTML5 and jQuery",
-				"Project Training"
-			]
-		},
-		{
-			"company" : "Mphasis Bangalore",
-			"technology" : "Object Orinted JavaScript",
-			"location" : "Bangalore",
-			"duration" : "10 May 2014 - 11 May 2014",
-			"batchsize" : "21",
-			"workResponsibilities" : [
-				"Train Leads and Architects in Front end MVC using Backbonejs",
-				"Project Training"
-			]
-		},
-		{
-			"company" : "Causeway Technologies Ltd",
-			"technology" : "Backbonejs",
-			"location" : "Bangalore",
-			"duration" : "March 2012 to April 2012",
-			"batchsize" : "45",
-			"workResponsibilities" : [
-				"Architect the product design",
-				"Work with the leads and ensure product delivery",
-				"Work on Backbone.js on enterprise product"
-			]
-		},
-		{
-			"company" : "Thought-works infotech",
-			"technology" : "AngularJS, nodejs, Mongo DB",
-			"location" : "Bangalore",
-			"duration" : "16 Dec 2014 - 30 Dec 2014",
-			"batchsize" : "17",
-			"workResponsibilities" : [
-				"Train Engineers in HTML5 and Jquery, Importance of AngularJS",
-				"Project Training"
-			]
-		}
-	],
+	
 	"education" : [
 		{
 			"school" : "Maharana Pratap College of Technology, Gwalior, India",
@@ -189,6 +53,13 @@
 			"endDate" : "2014",
 			"program" : "High School",
 			"achievements" : "8.317 CPI(Cumulative Performance Index)/ 79.02%(Percentage)"
+		},
+	 {
+			"school" : "Kendriya Vidyalaya",
+			"startDate" : "2011",
+			"endDate" : "2012",
+			"program" : "Secondary School",
+			"achievements" : "10 CGPA(Cumulative Grade Point Average)"
 		}
 	]
 }
