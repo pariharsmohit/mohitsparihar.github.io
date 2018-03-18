@@ -3,7 +3,7 @@
 	"title" : "Mechanical Engineer",
 	"email" : "mohitsinghparihar@gmail.com",
     "phoneNumber" : "+91 7354748168",
-    "website" : "http://www.jforjs.com",
+    "website" : "http://mohitsparihar.github.io/blog",
 	"objective" : "To make high-quality, exciting, and fun web and mobile applications that are challenging, provide opportunities to learn new technologies, and allow me to work with other highly motivated and talented developers.",
 	"aboutme" : "I am very interested in mechanical design and the interaction between mechanical components and electrical or simple computer systems (such as a microcontroller). I am also interested in startup companies.",
     "github":"https://github.com/mohitsparihar/",
@@ -13,7 +13,6 @@
 			"link" : "https://github.com/mohitsparihar/",
 			"name" : "GitHub"
 		},
-		
 		{
 			"link" : "http://www.linkedin.com/in/mohit-singh-parihar-b6837512b",
 			"name" : "LinkedIn"
@@ -25,25 +24,34 @@
 		{
 			"link" : "https://plus.google.com/116000295740154568748",
 			"name" : "Google+"
-		},
+		}
 		
 	],
 	"skills" : [
 		"CAD/CAM",
-		"HTML5",
-		
+		"AutoCAD",
+		"C",
+		"C++",
+		"Matlab"
 	],
 	"subjects" : [
 		"Thermodynamics",
 		"Engineering Mechanics",
 		"Machine Design"
 	],
-	
+	"projects": [
+		{
+            "name": "Design V2 NextGen",
+            "technologies": "Object Oriented Javascript, NodeJS, Grunt, GIT",
+            "description": "Next Gen Cdk websites has to accomodate the new manifest.json from the file system to apply the new themes and design provided by designers. My role is to write and test code, doing code-reviews, helping my team of 5 people for any techical or domain specific issues.",
+            "role": "Write directives in using Co framework to ease the design change of a given NextGen site."
+        }
+	],
 	"education" : [
 		{
 			"school" : "Maharana Pratap College of Technology, Gwalior, India",
 			"startDate" : "2014",
-			"endDate" : "-",
+			"endDate" : "2018",
 			"program" : "Bachelor of Engineering in Mechanical Engineering",
 			"achievements" : "-"
 		},
@@ -61,5 +69,20 @@
 			"program" : "Secondary School",
 			"achievements" : "10 CGPA(Cumulative Grade Point Average)"
 		}
+	],
+	"personalProjects": [
+		{
+			"title": "www.jforjs.com",
+			"description": "This is my own technical blog, which I am maintaing and updating regularly. Most of the posts are about Javascript world.",
+			"link": "http://www.jforjs.com"
+		}
+	],
+	"others": [
+		"Certificate For attending workshop on Metal Casting and Finishing.",
+		"Completed a workshop on the design software CATIA",
+		"Completed training on Basic Life Support and First Aid Skills.",
+		"Completed training on Basic Fire Safety and Emergency Preparedness.",
+		"Industrial visit to the Sitholi Spring Factory.",
+		"Certificate for attending 2 day automobile workshop at RJIT, Tekanpur, Gwalior conducted by SAE."
 	]
 }

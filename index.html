@@ -58,6 +58,34 @@
 				</ul>
 			</section>
 
+			<section id="education">
+				<h1>Education</h1>
+				<ul data-content="education">
+                    <li ng-repeat="item in resume.education">
+                        <section>
+                            <ul>
+                                <li>
+                                    <div class="label">School:</div>
+                                    <div class="content">{{item.school}}</div>
+                                </li>
+                                <li>
+                                    <div class="label">Program:</div>
+                                    <div class="content">{{item.program}}</div>
+                                </li>
+                                <li>
+                                    <div class="label">Dates Attended:</div>
+                                    <div class="content">{{item.startDate}} - {{item.endDate}}</div>
+                                </li>
+                                <li>
+                                    <div class="label">Achievements:</div>
+                                    <div class="content">{{item.achievements}}</div>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+				</ul>
+			</section>
+
 			<section id="frameworks">
 				<h1>Subjects / Topics</h1>
 				<ul data-content="subjects" class="double">
@@ -162,30 +190,35 @@
 				</ul>
 			</section>
 
-			<section id="education">
-				<h1>Education</h1>
-				<ul data-content="education">
-                    <li ng-repeat="item in resume.education">
+			<section id="projects">
+				<h1>Personal Projects</h1>
+				<ul data-content="projects">
+                    <li ng-repeat="project in resume.personalProjects">
                         <section>
                             <ul>
-                                <li>
-                                    <div class="label">School:</div>
-                                    <div class="content">{{item.school}}</div>
-                                </li>
-                                <li>
-                                    <div class="label">Program:</div>
-                                    <div class="content">{{item.program}}</div>
-                                </li>
-                                <li>
-                                    <div class="label">Dates Attended:</div>
-                                    <div class="content">{{item.startDate}} - {{item.endDate}}</div>
-                                </li>
-                                <li>
-                                    <div class="label">Achievements:</div>
-                                    <div class="content">{{item.achievements}}</div>
-                                </li>
-                            </ul>
+								<li>
+									<div class="label">Name:</div>
+									<div class="content">{{project.title}}</div>
+								</li>
+								<li ng-show="project.link">
+									<div class="label">URL:</div>
+									<div class="content"><a href="{{project.link}}">{{project.link}}</a></div>
+								</li>
+								<li>
+									<div class="label">Description:</div>
+									<div class="content">{{project.description}}</div>
+								</li>
+							</ul>
                         </section>
+                    </li>
+				</ul>
+			</section>
+
+			<section id="others">
+				<h1>Achievements / Others</h1>
+				<ul data-content="others">
+                    <li ng-repeat="other in resume.others track by $index">
+						<div class="content" ng-bind-html="other">{{other}}</div>
                     </li>
 				</ul>
 			</section>
