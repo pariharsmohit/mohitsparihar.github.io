@@ -30,8 +30,9 @@ const resume = {
         "C++",
         "HTML5",
         "CSS3",
-        "Javascript",
-        "MATLAB"
+        "JavaScript",
+        "MATLAB",
+        "GIT"
     ],
     "subjects" : [ 
         "Thermodynamics",
@@ -92,21 +93,10 @@ const resume = {
     }],
 
     "personalProjects" : [{
-        "name" : "",
-        "url" : "",
-        "description" : ""
-    },
-    {
-        "name" : "",
-        "url" : "",
-        "description" : ""
-    },
-    {
-        "name" : "",
-        "url" : "",
-        "description" : ""
-    }
-    ],
+        "name" : "Resume",
+        "url" : "https://mohitsparihar.github.io/",
+        "description" : "Resume built in vanilla JavaScript"
+    }],
     "personalProfile": {
         "dob": "15 Nov 1996",
         "mothersName": "Smt. Parvati Devi",

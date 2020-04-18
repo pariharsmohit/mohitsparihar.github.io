@@ -2,15 +2,11 @@ let content = document.getElementById("content");
 
 const headerTemplate = `<section>
                 <h1 class="name">${resume.name}</h1>
-                <head>${resume.title}</head>
                 <div id="contact">
-                    <div><img src="./img/phoneLogo.png"> : </img><a href="tel:+918770973964" target="_blank">${resume.phoneNumber}</a></div>
-                    <div><img src="./img/mailLogo.png"> : </img><a href="mailto:mohitsinghparihar@gmail.com" target="_blank">${resume.email}</a></div>
-                    <div><img src="./img/profileLogo.png"> : </img><a href="https://mohitsparihar.github.io/" target="_blank">${resume.website}</a></div>
+                    <div><img src="./img/phoneLogo.png"> : </img><a href="tel:${resume.phoneNumber}" target="_blank">${resume.phoneNumber}</a></div>
+                    <div><img src="./img/mailLogo.png"> : </img><a href="mailto:${resume.email}" target="_blank">${resume.email}</a></div>
                     <div><img src="./img/gitlogo.png"> : <a href="https://github.com/mohitsparihar/" target="_blank">${resume.github}</a></div>
                     <div><img src="./img/linkedinLogo.png"> : </img><a href="www.linkedin.com/in/mohitsparihar" target="_blank">${resume.linkedin}</a></div>
-                    <div><img src="./img/tweetLogo.png"> : </img><a href="${resume.social.twitter.link}" target="_blank">${resume.social.twitter.link}</a></div>
-                    <div><img src="./img/fblogo.png"> : </img><a href="${resume.social.facebook.link}" target="_blank">${resume.social.facebook.link}</a></div>
                 </div>
                 </section>`;
 
@@ -166,4 +162,4 @@ const personalProfileTemplate = `<section class="profile">
                                 </section>`;
                                     
 
-content.innerHTML = headerTemplate + skillTemplate + eduTemplate + traningTemplate + projectTemplate + personalProjectTemplate + personalProfileTemplate;
+content.innerHTML = headerTemplate + skillTemplate + eduTemplate + traningTemplate + projectTemplate + personalProjectTemplate;

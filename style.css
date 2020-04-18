@@ -57,6 +57,7 @@ section .double li {
 
 #contact{
     font-size: 13px;
+    margin-top: 1em;
 }
 
 #contact a{
