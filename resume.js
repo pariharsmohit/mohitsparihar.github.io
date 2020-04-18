@@ -67,7 +67,7 @@ const resume = {
                         "description" : "Manufacturing of Bolt using the method of sand casting and machining on Lathe"},
                     {"company" : "Railway Spring Factory, gwalior",
                        "topic" : "Manufacturing of railway coach spring",
-                       "description" : "Manufacturing of spring used in railway coaches for suspension from rods to finished product using  hot forging and machining"}]
+                       "description" : "Manufacturing of spring used in railway coaches for suspension from rods to finished product using  hot forging and machining"}
     ],
     "projects" : [{"title" : "Re-generative Braking",
                    "description" : "Using the frictional power and the torque wasted as heat in braking form generating power"},
