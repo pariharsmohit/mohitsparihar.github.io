@@ -6,7 +6,7 @@ const headerTemplate = `<section>
                     <div><img src="./img/phoneLogo.png"> : </img><a href="tel:${resume.phoneNumber}" target="_blank">${resume.phoneNumber}</a></div>
                     <div><img src="./img/mailLogo.png"> : </img><a href="mailto:${resume.email}" target="_blank">${resume.email}</a></div>
                     <div><img src="./img/gitlogo.png"> : <a href="https://github.com/mohitsparihar/" target="_blank">${resume.github}</a></div>
-                    <div><img src="./img/linkedinLogo.png"> : </img><a href="www.linkedin.com/in/mohitsparihar" target="_blank">${resume.linkedin}</a></div>
+                    <div><img src="./img/linkedinLogo.png"> : </img><a href="https://linkedin.com/in/mohitsparihar" target="_blank">${resume.linkedin}</a></div>
                 </div>
                 </section>`;
 

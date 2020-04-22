@@ -7,14 +7,14 @@ const resume = {
     "objective": "To make high quality, exciting, and fun web and mobile applications that are challenging, provide oppurtunites to learn new technologies, and allow me to work with highly motivated and talented developers.",
     "aboutMe": " Seeking an entry-level oppurtunity wtih an easteemed organisation where I can utilise my skills and enhance learning in th field if work. Capable of mastering new technologies",
     "github": "https://github.com/mohitsparihar/",
-    "linkedin": "www.linkedin.com/in/mohitsparihar",
+    "linkedin": "https://www.linkedin.com/in/mohitsparihar/",
     "social": {
         "github" :{
             "link": "https://github.com/mohitsparihar/",
             "name": "GitHub"
         },
         "linkedin" : {
-            "link": "http://www.linkedin.com/in/mohitsparihar",
+            "link": "https://www.linkedin.com/in/mohitsparihar/",
             "name": "LinkedIn"
         },
         "facebook" : {
