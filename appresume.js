@@ -1,28 +1,41 @@
-let content = document.getElementById("content");
+$.ajax({
+    url: "https://api.jsonbin.io/b/5ea02151435f5604bb45f156/latest"
+})
+    .done(data => {
+        const resumeData = data;
+        console.log(resumeData);
+        renderResume(resumeData);
+    })
+    .fail(error => {
+        console.log(error);
+    })
 
-const headerTemplate = `<section>
+function renderResume(resume) {
+    let content = document.getElementById("content");
+    
+    const headerTemplate = `<section>
                 <h1 class="name">${resume.name}</h1>
                 <div id="contact">
-                    <div><img src="./img/phoneLogo.png"></img><a href="tel:${resume.phoneNumber}" target="_blank">${resume.phoneNumber}</a></div>
-                    <div><img src="./img/mailLogo.png"></img><a href="mailto:${resume.email}" target="_blank">${resume.email}</a></div>
-                    <div><img src="./img/gitlogo.png"><a href="https://github.com/mohitsparihar/" target="_blank">${resume.github}</a></div>
-                    <div><img src="./img/linkedinLogo.png"></img><a href="https://linkedin.com/in/mohitsparihar" target="_blank">${resume.linkedin}</a></div>
+                    <div><img src="./img/phoneLogo.png"> : </img><a href="tel:${resume.phoneNumber}" target="_blank">${resume.phoneNumber}</a></div>
+                    <div><img src="./img/mailLogo.png"> : </img><a href="mailto:${resume.email}" target="_blank">${resume.email}</a></div>
+                    <div><img src="./img/gitlogo.png"> : <a href="https://github.com/mohitsparihar/" target="_blank">${resume.github}</a></div>
+                    <div><img src="./img/linkedinLogo.png"> : </img><a href="www.linkedin.com/in/mohitsparihar" target="_blank">${resume.linkedin}</a></div>
                 </div>
                 </section>`;
 
-const skillTemplate = `<h2><strong>Skills:</strong></h2>
+    const skillTemplate = `<h2><strong>Skills:</strong></h2>
                         <ul class="double">
                         ${resume.skills.reduce((a, c) => a + '<li class="double">' + c + '</li>', '')}
                     </ul>`;
 
-// const socialTemplate = `<section class="social">
-//                             <a href="${resume.social.twitter.link}"><img src="./img/tweetLogo.png"></a>
-//                             <a href="${resume.social.facebook.link}"><img src="./img/fblogo.png"></a>
-//                             <a href="${resume.social.linkedin.link}"><img src="./img/linkedinLogo.png"></a>
-//                             <a href="${resume.social.github.link}"><img src="./img/gitlogo.png"></a>
-//                         </section>`;
+    // const socialTemplate = `<section class="social">
+    //                             <a href="${resume.social.twitter.link}"><img src="./img/tweetLogo.png"></a>
+    //                             <a href="${resume.social.facebook.link}"><img src="./img/fblogo.png"></a>
+    //                             <a href="${resume.social.linkedin.link}"><img src="./img/linkedinLogo.png"></a>
+    //                             <a href="${resume.social.github.link}"><img src="./img/gitlogo.png"></a>
+    //                         </section>`;
 
-const eduTemplate = `<section id="education">
+    const eduTemplate = `<section id="education">
                     <h2>Education</h2>
                     <ul>
                      ${resume.education.reduce((a, eduObj) => a + `
@@ -52,7 +65,7 @@ const eduTemplate = `<section id="education">
                         </section>
                      `;
 
-const traningTemplate = `<section id="training">
+    const traningTemplate = `<section id="training">
                         <h2>Training</h2>
                         <ul>
                         ${resume.trainings.reduce((a, trainingObj) => a + `
@@ -78,7 +91,7 @@ const traningTemplate = `<section id="training">
                             </section>
                         `;
 
-const projectTemplate = `<section id="acadProject">
+    const projectTemplate = `<section id="acadProject">
                         <h2>Academic Projects</h2>
                         <ul>
                         ${resume.projects.reduce((a, projectObj) => a + `
@@ -99,7 +112,7 @@ const projectTemplate = `<section id="acadProject">
                             </ul>
                             </section>
                         `;
-const personalProjectTemplate = `<section id="personalProject">
+    const personalProjectTemplate = `<section id="personalProject">
                                     <h2>Personal Projects</h2>
                                     <ul>
                                     ${resume.personalProjects.reduce((a, personalProjectObj) => a + `
@@ -125,7 +138,7 @@ const personalProjectTemplate = `<section id="personalProject">
                                         </section>`;
 
 
-const personalProfileTemplate = `<section class="profile">
+    const personalProfileTemplate = `<section class="profile">
                                     <h2>Personal Profile:</h2>
                                         <ul>
                                             <li>
@@ -160,13 +173,14 @@ const personalProfileTemplate = `<section class="profile">
                                             </li>
                                         </ul>
                                 </section>`;
-                                    
 
-content.innerHTML = [
-    headerTemplate,
-    skillTemplate,
-    eduTemplate,
-    traningTemplate,
-    projectTemplate,
-    personalProjectTemplate
-].join('');
+
+    content.innerHTML = [
+        headerTemplate,
+        skillTemplate,
+        eduTemplate,
+        traningTemplate,
+        projectTemplate,
+        personalProjectTemplate
+    ].join('');
+}
