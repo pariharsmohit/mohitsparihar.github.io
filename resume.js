@@ -27,12 +27,13 @@ const resume = {
         }
     },
     "skills": [
-        "C++",
         "HTML5",
         "CSS3",
         "JavaScript",
-        "MATLAB",
-        "GIT"
+        "less",
+        "GIT",
+        "C++",
+        "MATLAB"
     ],
     "subjects" : [ 
         "Thermodynamics",
@@ -85,7 +86,8 @@ const resume = {
     ],
     "projects": [{
         "title": "Re-generative Braking",
-        "description": "Using the torque wasted as heat in braking for generating power for further use in the vehicle "
+        "description": "Using the torque wasted as heat in braking for generating power for saving the fuel in the vehicle.",
+        "url": "https://mohitsparihar.github.io/regenerative-braking/"
     },
     {
         "title": "Experimental Investigation on Solar Chimney for the Room Ventilation",
@@ -96,7 +98,13 @@ const resume = {
         "name" : "Resume",
         "url" : "https://mohitsparihar.github.io/",
         "description" : "Resume built in vanilla JavaScript"
-    }],
+    },
+    {
+        "name" : "Weather Page",
+        "url" : "https://mohitsparihar.github.io/weatherPage/",
+        "description" : "Weather app built in JavaScript with the use of API"
+    }
+],
     "personalProfile": {
         "dob": "15 Nov 1996",
         "mothersName": "Smt. Parvati Devi",

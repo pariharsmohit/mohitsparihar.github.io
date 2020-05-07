@@ -92,7 +92,11 @@ const projectTemplate = `<section id="acadProject">
                                             <li>
                                                 <div class="label">Description:</div>
                                                 <div class="content">${projectObj.description}</div>
-                                            </li> 
+                                            </li>
+                                            <li class="${isThere(projectObj.url)}">
+                                                <div class="label">Url:</div>
+                                                <div class="content"><a href="${projectObj.url}" target="_blank">${projectObj.url}</a></div>
+                                            </li>
                                         </ul>
                                     </section>
                                 </li>`, '')}
@@ -112,7 +116,7 @@ const personalProjectTemplate = `<section id="personalProject">
                                                         </li>
                                                         <li>
                                                             <div class="label">Url:</div>
-                                                            <div class="content">${personalProjectObj.url}</div>
+                                                            <div class="content"><a href="${personalProjectObj.url}" target="_blank">${personalProjectObj.url}</a></div>
                                                         </li>
                                                         <li>
                                                             <div class="label">Description:</div>
@@ -161,6 +165,11 @@ const personalProfileTemplate = `<section class="profile">
                                         </ul>
                                 </section>`;
                                     
+function isThere(property) {
+    return property === undefined ? 'hide': '';
+}
+
+
 
 content.innerHTML = [
     headerTemplate,
