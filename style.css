@@ -31,7 +31,7 @@ section .label {
 }
 section .content {
   vertical-align: top;
-  width: 600px;
+  width: 550px;
   display: inline-block;
 }
 section section {

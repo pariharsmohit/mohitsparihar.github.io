@@ -78,8 +78,33 @@ const traningTemplate = `<section id="training">
                             </section>
                         `;
 
-const projectTemplate = `<section id="acadProject">
+const academicProjectTemplate = `<section id="acadProject">
                         <h2>Academic Projects</h2>
+                        <ul>
+                        ${resume.academicProjects.reduce((a, acadProjectObj) => a + `
+                                <li>
+                                    <section>
+                                        <ul>
+                                            <li>
+                                                <div class="label">Title:</div>
+                                                <div class="content">${acadProjectObj.title}</div>
+                                            </li>
+                                            <li>
+                                                <div class="label">Description:</div>
+                                                <div class="content">${acadProjectObj.description}</div>
+                                            </li>
+                                            <li class="${isThere(acadProjectObj.url)}">
+                                                <div class="label">Url:</div>
+                                                <div class="content"><a href="${acadProjectObj.url}" target="_blank">${acadProjectObj.url}</a></div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </li>`, '')}
+                            </ul>
+                            </section>
+                        `;
+const projectTemplate = `<section id="project">
+                        <h2>Projects</h2>
                         <ul>
                         ${resume.projects.reduce((a, projectObj) => a + `
                                 <li>
@@ -90,12 +115,12 @@ const projectTemplate = `<section id="acadProject">
                                                 <div class="content">${projectObj.title}</div>
                                             </li>
                                             <li>
+                                                <div class="label">Technologies:</div>
+                                                <div class="content">${projectObj.technologies}</div>
+                                            </li>
+                                            <li>
                                                 <div class="label">Description:</div>
                                                 <div class="content">${projectObj.description}</div>
-                                            </li>
-                                            <li class="${isThere(projectObj.url)}">
-                                                <div class="label">Url:</div>
-                                                <div class="content"><a href="${projectObj.url}" target="_blank">${projectObj.url}</a></div>
                                             </li>
                                         </ul>
                                     </section>
@@ -103,6 +128,7 @@ const projectTemplate = `<section id="acadProject">
                             </ul>
                             </section>
                         `;
+
 const personalProjectTemplate = `<section id="personalProject">
                                     <h2>Personal Projects</h2>
                                     <ul>
@@ -164,9 +190,44 @@ const personalProfileTemplate = `<section class="profile">
                                             </li>
                                         </ul>
                                 </section>`;
-                                    
+
+const experienceTemplate = `<section id="experience">
+                                <h2>Experience</h2>
+                                <ul>
+                                 ${resume.experience.reduce((a, expObj) => a + `
+                                        <li>
+                                            <section>
+                                                <ul>
+                                                    <li>
+                                                        <div class="label">Company Name:</div>
+                                                        <div class="content">${expObj.name}</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="label">Title:</div>
+                                                        <div class="content">${expObj.title}</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="label">Tenure:</div>
+                                                        <div class="content">${expObj.startDate} - ${expObj.endDate}</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="label">Location:</div>
+                                                        <div class="content">${expObj.location}</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="label">URL:</div>
+                                                        <div class="content">${expObj.url}</div>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </li>`, '')}
+                                    </ul>
+                                    </section>
+                                 `;
+
+
 function isThere(property) {
-    return property === undefined ? 'hide': '';
+    return property === undefined ? 'hide' : '';
 }
 
 
@@ -175,7 +236,9 @@ content.innerHTML = [
     headerTemplate,
     skillTemplate,
     eduTemplate,
-    traningTemplate,
+    experienceTemplate,
     projectTemplate,
-    personalProjectTemplate
+    personalProjectTemplate,
+    academicProjectTemplate,
+    traningTemplate
 ].join('');

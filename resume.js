@@ -9,19 +9,19 @@ const resume = {
     "github": "https://github.com/mohitsparihar/",
     "linkedin": "https://linkedin.com/in/mohitsparihar",
     "social": {
-        "github" :{
+        "github": {
             "link": "https://github.com/mohitsparihar/",
             "name": "GitHub"
         },
-        "linkedin" : {
+        "linkedin": {
             "link": "https://linkedin.com/in/mohitsparihar",
             "name": "LinkedIn"
         },
-        "facebook" : {
+        "facebook": {
             "link": "https://facebook.com/mohitsinghp",
             "name": "Facebook"
         },
-        "twitter" : {
+        "twitter": {
             "link": "http://www.twitter.com/pariharsmohit",
             "name": "Twitter"
         }
@@ -30,12 +30,13 @@ const resume = {
         "HTML5",
         "CSS3",
         "JavaScript",
-        "less",
+        "Angular 2+",
+        "SCSS",
+        "LESS",
         "GIT",
-        "C++",
-        "MATLAB"
+        "C++"
     ],
-    "subjects" : [ 
+    "subjects": [
         "Thermodynamics",
         "Engineering Mechanics",
         "IC Engine"
@@ -84,7 +85,7 @@ const resume = {
             "description": "Manufacturing of spring used in railway coaches for suspension from rods to finished product using  hot forging and machining"
         }
     ],
-    "projects": [{
+    "academicProjects": [{
         "title": "Re-generative Braking",
         "description": "Using the torque wasted as heat in braking for generating power for saving the fuel in the vehicle.",
         "url": "https://mohitsparihar.github.io/regenerative-braking/"
@@ -93,18 +94,31 @@ const resume = {
         "title": "Experimental Investigation on Solar Chimney for the Room Ventilation",
         "description": "Experimental analysis of air flow in a room using MATLAB software to calculate the the effect of solar chimney ventilation."
     }],
+    "projects": [{
+        "title": "ACB (Appointment CallBack)",
+        "technologies": "OOJS, Angular 2+, HTML5",
+        "description": "ACB provide a call tracking and scheduling system for business process executives."
+    }],
+    "experience": [{
+        "name": "ABM WEB SOLUTIONS PVT LTD.",
+        "title": "Software Engineer",
+        "startDate": "September 2018",
+        "endDate": "present",
+        "location": "BANGALORE",
+        "url": "www.abmwebsol.com"
+    }],
 
-    "personalProjects" : [{
-        "name" : "Resume",
-        "url" : "https://mohitsparihar.github.io/",
-        "description" : "Resume built in vanilla JavaScript"
+    "personalProjects": [{
+        "name": "Resume",
+        "url": "https://mohitsparihar.github.io/",
+        "description": "Resume built in vanilla JavaScript"
     },
     {
-        "name" : "Weather Page",
-        "url" : "https://mohitsparihar.github.io/weatherPage/",
-        "description" : "Weather app built in JavaScript with the use of API"
+        "name": "Weather Page",
+        "url": "https://mohitsparihar.github.io/weatherPage/",
+        "description": "Weather app built in JavaScript with the use of API"
     }
-],
+    ],
     "personalProfile": {
         "dob": "15 Nov 1996",
         "mothersName": "Smt. Parvati Devi",
