@@ -235,10 +235,8 @@ function isThere(property) {
 content.innerHTML = [
     headerTemplate,
     skillTemplate,
-    eduTemplate,
-    experienceTemplate,
     projectTemplate,
+    experienceTemplate,
     personalProjectTemplate,
-    academicProjectTemplate,
-    traningTemplate
+    eduTemplate
 ].join('');

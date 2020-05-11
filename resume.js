@@ -55,14 +55,14 @@ const resume = {
             "endDate": "2014",
             "program": "High School",
             "achievements": "8.317 CPI(Cumulative Performance Index)/ 79.02%(Percentage)"
-        },
-        {
-            "school": "Kendriya Vidyalaya No.2 Vasco Da Gama, Goa",
-            "startDate": "2011",
-            "endDate": "2012",
-            "program": "Secondary School",
-            "achievements": "10 CGPA(Cumulative Grade Point Average)"
         }
+        // {
+        //     "school": "Kendriya Vidyalaya No.2 Vasco Da Gama, Goa",
+        //     "startDate": "2011",
+        //     "endDate": "2012",
+        //     "program": "Secondary School",
+        //     "achievements": "10 CGPA(Cumulative Grade Point Average)"
+        // }
     ],
     "trainings": [
         /*{
