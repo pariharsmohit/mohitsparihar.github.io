@@ -117,6 +117,11 @@ const resume = {
         "name": "Weather Page",
         "url": "https://mohitsparihar.github.io/weatherPage/",
         "description": "Weather app built in JavaScript with the use of API"
+    },
+    {
+        "name": "Password Generator",
+        "url": "https://mohitsparihar.github.io/passwordGenerator/",
+        "description": "Random password Generator"
     }
     ],
     "personalProfile": {
