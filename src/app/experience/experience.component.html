@@ -1,0 +1,31 @@
+<section id="experience" class="content-wrapper">
+    <h2>Experience</h2>
+    <ul>
+            <li *ngFor="let expObj of experience">
+                <section>
+                    <ul>
+                        <li>
+                            <div class="label">Company Name:</div>
+                            <div class="content">{{expObj.name}}</div>
+                        </li>
+                        <li>
+                            <div class="label">Title:</div>
+                            <div class="content">{{expObj.title}}</div>
+                        </li>
+                        <li>
+                            <div class="label">Tenure:</div>
+                            <div class="content">{{expObj.startDate}} - {{expObj.endDate}}</div>
+                        </li>
+                        <li>
+                            <div class="label">Location:</div>
+                            <div class="content">{{expObj.location}}</div>
+                        </li>
+                        <li>
+                            <div class="label">URL:</div>
+                            <div class="content">{{expObj.url}}</div>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+        </section>

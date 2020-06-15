@@ -1,0 +1,24 @@
+<section id="personal-projects" class="content-wrapper">
+    <h2>Personal Projects</h2>
+    <ul>
+        <li *ngFor="let personalProjectObj of personalProjects">
+            <section>
+                <ul>
+                    <li>
+                        <div class="label">Name:</div>
+                        <div class="content">{{personalProjectObj.name}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Description:</div>
+                        <div class="content">{{personalProjectObj.description}}</div>
+                    </li>
+                    <li class="btn-links" *ngIf="personalProjectObj.code || personalProjectObj.demo || personalProjectObj.link">
+                        <a *ngIf="personalProjectObj.demo" class="button" href="{{personalProjectObj.demo}}" target="_blank">Demo</a>
+                        <a *ngIf="personalProjectObj.code" class="button" href="{{personalProjectObj.code}}" target="_blank">Github</a>
+                        <a *ngIf="personalProjectObj.link" class="button" href="{{personalProjectObj.link}}" target="_blank">Link</a>
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</section>

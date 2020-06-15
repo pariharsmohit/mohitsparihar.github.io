@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import '../assets/variables.scss';
+$main-component-height: calc(100vh - 58px);
+
+.main {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "nav-bar nav-bar"
+    "left-panel right-panel"
+    "left-panel right-panel";
+}
+
+nav {
+  background-color: $color1;
+  grid-area: nav-bar;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+  #home-btn {
+    margin-right: auto;
+  }
+
+  a {
+    padding: 15px;
+    text-decoration: none;
+    color: $color4;
+
+    &:hover,
+    &.selected {
+      background-color: $color3;
+    }
+  }
+}
+
+.left-panel{
+  grid-area: left-panel;
+  width: 30vw;
+  height: $main-component-height;
+  background-color:	$color3;
+}
+
+.right-panel {
+  overflow-y: scroll;
+  width: 70vw;
+  height: $main-component-height;
+  grid-area: right-panel;
+  background-color: $color4;
+  color: $color1;
+}
+
+:host ::ng-deep .content-wrapper {
+  padding: 20px;
+  min-height: $main-component-height;
+
+  #content {
+    margin: 0 auto;
+    width : 800px;
+  }
+
+  .first {
+    float: right;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  h1, h2 {
+    margin-bottom : 20px;
+    padding-bottom: 4px;
+    margin-right  : 10px;
+    margin-top    : 0.8em;
+    border-bottom : 1px solid	$color2;
+  }
+
+  section {
+    margin-bottom: 2rem;
+    
+    ul {
+      width   : 800px;
+      overflow: hidden;
+    }
+    .content {
+      vertical-align: top;
+      width         : 550px;
+      display       : inline-block;
+    }
+    .label {
+      font-weight  : bold;
+      width        : 150px;
+      text-align   : right;
+      padding-right: 0.5em;
+      display      : inline-block;
+    }
+  }
+
+  section .double li {
+    float: left;
+    width: 30%;
+  }
+
+  #others div {
+    margin-left  : 100px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  
+    &:link {
+      color: $color1;
+    }
+
+    /* visited link */
+    &:visited {
+      color: $color1;
+    }
+
+    /* mouse over link */
+    &:hover {
+      color: $color3;
+    }
+
+    /* selected link */
+    &:active {
+      color: $color1;
+    }
+ }
+
+
+  .hide {
+    display: none !important;
+  }
+}

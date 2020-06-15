@@ -1,0 +1,68 @@
+@import '../../assets/variables.scss';
+
+section {
+  padding-top: 20px;
+  text-align: center;
+  color: $color1;
+  text-align: center;
+  h1{
+    margin-bottom : 30px;
+    padding: 4px;
+    margin-right  : 10px;
+    margin-top    : 0.8em;
+    border-bottom : 1px solid	$color5;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  #contact {
+    padding: 0 60px;
+    font-size: 13px;
+    margin-top: 1em;
+    text-align: left;
+    border: 0;
+
+    a {
+      font-size: 1rem;
+      text-decoration: none;
+      &:link {
+        color: $color1;
+        }
+    
+        /* visited link */
+        &:visited {
+          color: $color1;
+        }
+    
+        /* mouse over link */
+        &:hover {
+          color: $color4;
+        }
+    
+        /* selected link */
+        &:active {
+          color: $color1;
+        }
+      }
+    
+    img {
+        width: 20px;
+        height: 15px;
+        padding-right: 1.5%;
+      }
+  }
+
+  .profile-image {
+    background-image: url('../../assets/img/profile-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.8);
+    background-position-x: -77px;
+    min-height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
