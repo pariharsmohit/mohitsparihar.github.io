@@ -113,7 +113,7 @@
         "name": "Weather Page",
         "demo": "https://mohitsparihar.github.io/weatherPage/",
         "code": "https://github.com/mohitsparihar/weatherPage",
-        "description": "Weather app built in JavaScript with the use of openweathermap.org API and leaflet.js"
+        "description": "Weather application built in JavaScript with the use of openweathermap.org API and leaflet.js"
       },
       {
         "name": "Password Generator",
