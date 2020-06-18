@@ -14,4 +14,8 @@ a.button {
     display: inline-block;
     min-width: 70px;
     text-align: center;
+
+    &:hover {
+        background-color: $color2;
+    }
 }

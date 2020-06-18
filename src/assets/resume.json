@@ -3,7 +3,7 @@
     "title": "Mechanical Engineer",
     "email": "mohitsinghparihar@gmail.com",
     "phoneNumber": "+91 8770973964",
-    "website": "https://mohitsparihar.github.io/",
+    "website": "https://mspwrites.com/",
     "objective": "To make high quality, exciting, and fun web and mobile applications that are challenging, provide oppurtunites to learn new technologies, and allow me to work with highly motivated and talented developers.",
     "aboutMe": " Seeking an entry-level oppurtunity wtih an easteemed organisation where I can utilise my skills and enhance learning in th field if work. Capable of mastering new technologies",
     "github": "https://github.com/mohitsparihar/",
@@ -103,6 +103,12 @@
       }
     ],
     "personalProjects": [
+      {
+        "name": "www.mspwrites.com",
+        "link": "https://mspwrites.com/",
+        "code": "https://github.com/mohitsparihar/mohitsparihar.github.io",
+        "description": "Website built in Angular 2+"
+      },
       {
         "name": "Resume",
         "demo": "https://mohitsparihar.github.io/resume/",
