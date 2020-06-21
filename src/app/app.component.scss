@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import '../assets/variables.scss';
-$main-component-height: calc(100vh - 58px);
+$main-component-height: calc(100vh - 52px);
 
 .main {
   position: relative;
@@ -28,6 +28,7 @@ nav {
     padding: 15px;
     text-decoration: none;
     color: $color4;
+    font-size: 16px;
 
     &:hover,
     &.selected {
@@ -38,14 +39,14 @@ nav {
 
 .left-panel{
   grid-area: left-panel;
-  width: 30vw;
+  width: 25vw;
   height: $main-component-height;
   background-color:	$color3;
 }
 
 .right-panel {
   overflow-y: scroll;
-  width: 70vw;
+  width: 75vw;
   height: $main-component-height;
   grid-area: right-panel;
   background-color: $color4;
