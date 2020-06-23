@@ -6,7 +6,7 @@ import { HttpService } from './http.service';
     templateUrl: './app.component.html',
     styleUrls: [
         './app.component.scss',
-        './_responsive.scss'
+        './app.component.mobile.scss'
     ]
 })
 export class AppComponent implements OnInit {
@@ -34,14 +34,16 @@ export class AppComponent implements OnInit {
             return (window.innerHeight || document.documentElement.clientHeight);
         }
     }
-    hamburgerMenu() {
-        const homeBtn = document.getElementById('home-btn');
-        let links = document.getElementById("myLinks");
-        if (links.style.display === "block") {
-          links.style.display = "none";
+     
+    myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            x.classList.remove('visible');
         } else {
-          links.style.display = "block";
+            x.style.display = "block";
+            x.classList.add('visible');
         }
-      }
+    }
 
 }
