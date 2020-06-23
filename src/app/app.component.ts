@@ -4,7 +4,10 @@ import { HttpService } from './http.service';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: [
+        './app.component.scss',
+        './_responsive.scss'
+    ]
 })
 export class AppComponent implements OnInit {
     title = 'resume';
@@ -19,7 +22,6 @@ export class AppComponent implements OnInit {
         let elements = document.querySelectorAll('.content-wrapper');
         elements.forEach(element => {
             let boundary = element.getBoundingClientRect();
-            console.log(boundary.top, boundary.bottom);
             if ((boundary.top < (getViewportHeight() - 50) && boundary.top > 0)
                 || (boundary.top < 0 && boundary.bottom >= getViewportHeight())) {
                 document.getElementById('nav-' + element.getAttribute('id')).classList.add('selected');
@@ -32,5 +34,14 @@ export class AppComponent implements OnInit {
             return (window.innerHeight || document.documentElement.clientHeight);
         }
     }
+    hamburgerMenu() {
+        const homeBtn = document.getElementById('home-btn');
+        let links = document.getElementById("myLinks");
+        if (links.style.display === "block") {
+          links.style.display = "none";
+        } else {
+          links.style.display = "block";
+        }
+      }
 
 }
