@@ -4,7 +4,6 @@ section {
   padding-top: 20px;
   text-align: center;
   color: $color1;
-  text-align: center;
   h1{
     margin-bottom : 30px;
     padding: 4px;
@@ -17,9 +16,9 @@ section {
   }
   
   #contact {
-    font-size: 10px;
+    font-size: 6px;
     margin-top: 1em;
-    text-align: left;
+    text-align: center;
     border: 0;
 
     a {
@@ -51,7 +50,8 @@ section {
         padding-right: 1.5%;
       }
     .contact-div {
-      padding: 0 0 0 2em;
+      padding: 0 0 0 6.5em;
+      text-align: justify;
     }
   }
 
