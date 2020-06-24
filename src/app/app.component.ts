@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './http.service';
+import { IfStmt } from '@angular/compiler';
 
 @Component({
     selector: 'app-root',
@@ -11,6 +12,7 @@ import { HttpService } from './http.service';
 })
 export class AppComponent implements OnInit {
     title = 'resume';
+    showMenu = false;
 
     constructor(private httpService: HttpService) { }
 
@@ -35,15 +37,13 @@ export class AppComponent implements OnInit {
         }
     }
      
-    myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-            x.classList.remove('visible');
-        } else {
-            x.style.display = "block";
-            x.classList.add('visible');
+    toggleMenu(event) {
+        if(event.target.attributes.id && event.target.attributes.id.value === 'hamburger-icon') {
+            this.showMenu = !this.showMenu;
+            event.stopPropagation();
+            return;
         }
+        this.showMenu = false;
     }
 
 }

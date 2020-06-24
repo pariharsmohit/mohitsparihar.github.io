@@ -134,6 +134,7 @@
       }
           
       .mobile-nav {
+        display: unset;
         overflow: hidden;
         background: transparent;
         width: 100%;
@@ -141,13 +142,17 @@
         z-index: 2000;
 
         .visible {
+          display: block;
           background-color: $color3;
           width: 100%;
         }
         
-        #myLinks {
+        .hide {
           display: none;
         }
+        // #myLinks {
+        //   display: none;
+        // }
         & a {
           color: $color4;
           text-decoration: none;
@@ -163,7 +168,7 @@
             top: 0;
           }
           &:hover {
-            background-color: $color3;
+            background-color: $color2;
             color: $color4;
           }
         }

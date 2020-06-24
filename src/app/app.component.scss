@@ -11,6 +11,10 @@ $main-component-height: calc(100vh - 52px);
     "left-panel right-panel";
 }
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   background-color: $color1;
   grid-area: nav-bar;

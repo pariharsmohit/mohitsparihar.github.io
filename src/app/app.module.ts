@@ -12,6 +12,7 @@ import { PersonalProjectComponent } from './personal-project/personal-project.co
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { HomeComponent } from './home/home.component';
+import { MobileLinksComponent } from './mobile-links/mobile-links.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     PersonalProjectComponent,
     ProjectsComponent,
     ExperienceComponent,
-    HomeComponent
+    HomeComponent,
+    MobileLinksComponent
   ],
   imports: [
     BrowserModule,

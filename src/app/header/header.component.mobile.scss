@@ -2,36 +2,22 @@
 
 @media only screen and (max-width:1224px) {
   section {
-    padding: 4%;
-    text-align: center;
+    padding: 0;
+    text-align: unset;
     color: $color1;
     text-align: center;
     height: 100%;
     h1{
       display: none;
     }
-    
-      img {
-          width: 4%;
-          height: 5%;
-          padding-right: 1.5%;
-        }
-      .contact-div {
-        display: none;
-        padding: 0 0 0 2em;
-      }
+    .contact-div {
+      display: none;
+    }
 
     .profile-image {
-      background-image: url('../../assets/img/profile-image.webp');
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: grayscale(0.8);
-      background-position-x: -30px;
+      background-position-x: -26px;
       min-height: 6.5em;
-      width: 6.5em;
-      border-radius: 50%;
-      margin: 0 auto;
+      width: 7em;
     }
   }
-
 }

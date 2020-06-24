@@ -1,4 +1,4 @@
-<section class="main">
+<section class="main" (click)="toggleMenu($event)">
     <nav class="desktop-nav">
         <a href="#home" id="home-btn">Home</a>
         <a href="https://mspwrites.com/blog/" target="_blank">Blog</a>
@@ -13,11 +13,11 @@
 
     <!-- Navigation bar for the mobile devices -->
     <nav class="mobile-nav">
-        <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+        <a href="javascript:void(0);" class="icon" id="hamburger-icon" (click)="toggleMenu($event)">
             <i class="fa fa-bars"></i>
         </a>
-        <div id="myLinks">
-            <a href="#home">Home</a>
+        <div id="myLinks" [ngClass]="{'visible' : showMenu, 'hide' : !showMenu}">
+            <a href="/">Home</a>
             <a href="https://mspwrites.com/blog/" target="_blank">Blog</a>
             <a href="#skills" id="nav-skills">Skills</a>
             <a href="#projects" id="nav-projects">Projects</a>

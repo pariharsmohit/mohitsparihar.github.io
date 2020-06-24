@@ -5,7 +5,10 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-personal-project',
   templateUrl: './personal-project.component.html',
-  styleUrls: ['./personal-project.component.scss']
+  styleUrls: [
+    './personal-project.component.scss',
+    './personal-project.component.mobile.scss'
+  ]
 })
 export class PersonalProjectComponent implements OnInit, OnDestroy {
   personalProjects: any;
