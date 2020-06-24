@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './http.service';
+import { IfStmt } from '@angular/compiler';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: [
         './app.component.scss',
-        './_responsive.scss'
+        './app.component.mobile.scss'
     ]
 })
 export class AppComponent implements OnInit {
     title = 'resume';
+    showMenu = false;
 
     constructor(private httpService: HttpService) { }
 
@@ -34,14 +36,14 @@ export class AppComponent implements OnInit {
             return (window.innerHeight || document.documentElement.clientHeight);
         }
     }
-    hamburgerMenu() {
-        const homeBtn = document.getElementById('home-btn');
-        let links = document.getElementById("myLinks");
-        if (links.style.display === "block") {
-          links.style.display = "none";
-        } else {
-          links.style.display = "block";
+     
+    toggleMenu(event) {
+        if(event.target.attributes.id && event.target.attributes.id.value === 'hamburger-icon') {
+            this.showMenu = !this.showMenu;
+            event.stopPropagation();
+            return;
         }
-      }
+        this.showMenu = false;
+    }
 
 }

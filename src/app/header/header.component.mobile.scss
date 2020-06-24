@@ -1,0 +1,23 @@
+@import '../../assets/variables.scss';
+
+@media only screen and (max-width:1224px) {
+  section {
+    padding: 0;
+    text-align: unset;
+    color: $color1;
+    text-align: center;
+    height: 100%;
+    h1{
+      display: none;
+    }
+    .contact-div {
+      display: none;
+    }
+
+    .profile-image {
+      background-position-x: -26px;
+      min-height: 6.5em;
+      width: 7em;
+    }
+  }
+}
