@@ -131,6 +131,11 @@
         "name": "freeCodeCamp Responsive Web Design Certification",
         "link": "https://www.freecodecamp.org/certification/mohitsparihar/responsive-web-design",
         "description": "Responsive Web Design Certification"
+      },
+      {
+        "name": "freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+        "link": "https://www.freecodecamp.org/certification/mohitsparihar/javascript-algorithms-and-data-structures",
+        "description": "JavaScript Algorithms and Data Structures Certification. Developer Certification, representing approximately 300 hours of coursework"
       }
     ],
     "personalProfile": {
