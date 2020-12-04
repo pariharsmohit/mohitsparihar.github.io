@@ -104,6 +104,11 @@
     ],
     "personalProjects": [
       {
+        "name": "Trello Clone",
+        "code": "https://github.com/mohitsparihar/trello-react",
+        "description": "Trello clone built using React library of JavaScript"
+      },
+      {
         "name": "www.mspwrites.com",
         "link": "https://mspwrites.com/",
         "code": "https://github.com/mohitsparihar/mohitsparihar.github.io",
@@ -122,15 +127,14 @@
         "description": "Weather app built in JavaScript with the use of openweathermap.org API and leaflet.js"
       },
       {
-        "name": "Password Generator",
-        "demo": "https://mohitsparihar.github.io/passwordGenerator/",
-        "code": "https://github.com/mohitsparihar/passwordGenerator",
-        "description": "Random password Generator"
-      },
-      {
         "name": "freeCodeCamp Responsive Web Design Certification",
         "link": "https://www.freecodecamp.org/certification/mohitsparihar/responsive-web-design",
         "description": "Responsive Web Design Certification"
+      },
+      {
+        "name": "freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+        "link": "https://www.freecodecamp.org/certification/mohitsparihar/javascript-algorithms-and-data-structures",
+        "description": "JavaScript Algorithms and Data Structures Certification. Developer Certification, representing approximately 300 hours of coursework"
       }
     ],
     "personalProfile": {
